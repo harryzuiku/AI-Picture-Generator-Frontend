@@ -38,7 +38,7 @@ export default function ArtGenerationWebAppContainer() {
     formData.append("aspectRatio", aspectRatio);
 
     try {
-      const res = await fetch("http://localhost:5001/generate", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE}/generate`, {
         method: "POST",
         body: formData,
       });
