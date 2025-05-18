@@ -6,7 +6,7 @@ export default function ArtGenerationWebAppContainer() {
     id: 1,
     title: "Abstract Landscape",
     image: "https://picsum.photos/id/1015/800/600",
-    date: "12 Jul 2023"
+    date: "20 May 2025"
   });
 
   const [file, setFile] = useState<File | null>(null);
@@ -135,7 +135,7 @@ const ArtGenerationWebApp: React.FC<ArtGenerationWebAppProps> = ({
     <div className="min-h-screen bg-black text-white">
       <header className="bg-[#9c2200] py-6">
         <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
-          <h1 className="text-3xl font-bold">AI Art Generator</h1>
+          <h1 className="text-3xl font-bold">Harry's AI Art Generator</h1>
           <div className="flex items-center gap-6">
             <Bell className="w-6 h-6 cursor-pointer hover:text-gray-200" />
             <div className="flex items-center gap-4">
@@ -158,8 +158,8 @@ const ArtGenerationWebApp: React.FC<ArtGenerationWebAppProps> = ({
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-8 py-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <main className="w-full bg-black text-white px-4 sm:px-8 py-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold mb-6">Create Your Art</h2>
             <div className="bg-[#c24e2a] rounded-xl p-6 mb-6">
@@ -265,14 +265,14 @@ const ArtGenerationWebApp: React.FC<ArtGenerationWebAppProps> = ({
             </div>
 
             <div className="mt-6 text-center text-gray-400">
-              <p>All generated images are licensed under Creative Commons</p>
+              <p>All generated images are licensed under Harry Chen</p>
             </div>
           </div>
         </div>
 
         <footer className="bg-[#1a1a1a] border-t border-gray-800 py-6 mt-10">
           <div className="max-w-7xl mx-auto px-8 text-center text-gray-400">
-            <p>© 2023 AI Art Generator. All rights reserved.</p>
+            <p>© 2025 Harry's AI Art Generator. All rights reserved.</p>
           </div>
         </footer>
       </main>
